@@ -265,8 +265,6 @@ extension CentralManager.DelegateWrapper: CBCentralManagerDelegate {
                 return
             }
             continuation.yield(scanData)
-            
-            Self.logger.info("Found peripheral \(scanData.peripheral.identifier)")
         }
     }
     
